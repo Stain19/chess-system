@@ -8,18 +8,18 @@ import gameboard.Position;
 import java.util.Arrays;
 import java.util.List;
 
-public class King extends ChessPiece {
+public class Knight extends ChessPiece {
     private final List<Position> DIRECTIONS = Arrays.asList(
-            new Position(-1,-1),
-            new Position(-1,0),
-            new Position(-1,1),
-            new Position(0,-1),
-            new Position(0,1),
-            new Position(1,-1),
-            new Position(1,0),
-            new Position(1,1)
-            );
-    public King(Board board, Color color) {
+            new Position(-2,-1),
+            new Position(-2,1),
+            new Position(-1,-2),
+            new Position(-1,2),
+            new Position(1,-2),
+            new Position(1,2),
+            new Position(2,-1),
+            new Position(2,1)
+    );
+    public Knight(Board board, Color color) {
         super(board, color);
     }
 
@@ -31,7 +31,7 @@ public class King extends ChessPiece {
 
     @Override
     public String toString() {
-        return "K";
+        return "N";
     }
 
     @Override
