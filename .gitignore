@@ -23,5 +23,5 @@
 hs_err_pid*
 replay_pid*
 
-# Theme
-.idea/material_theme_project_new.xml
+# Intellij
+.idea/
